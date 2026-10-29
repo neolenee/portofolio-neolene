@@ -107,7 +107,7 @@
                     <div class="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-tr from-cyan-300 to-blue-500 p-1.5 shadow-[0_0_20px_rgba(6,182,212,0.6)]">
                         <div class="w-full h-full rounded-full bg-ocean-mid overflow-hidden border-4 border-transparent flex items-center justify-center">
                             <!-- Menggunakan file 1000272646.png -->
-                            <img src="1000272646.png" alt="Neolene Putri Kusuma Wardhani" class="w-full h-full object-cover">
+                            <img src="image_1.jpeg" alt="Neolene Putri Kusuma Wardhani" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
