@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Neolene Putri Kusuma Wardhani</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #020617 0%, #0f172a 30%, #0369a1 70%, #0891b2 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+      
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .glass-item {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .glass-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        
+        .spongebob-float {
+            position: fixed;
+            bottom: 5%;
+            left: 5%;
+            width: 120px;
+            z-index: 0;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+
+        #bubble-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <canvas id="bubble-canvas"></canvas>
+
+    
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png" alt="SpongeBob" class="spongebob-float">
+
+  
+    <main class="max-w-5xl mx-auto px-4 py-12 relative z-10">
+        
+        
+        <div class="glass-card rounded-3xl p-8 mb-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+              
+                <div class="flex-shrink-0">
+                    <img src="1000272646.png" alt="Foto Neolene" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl border-4 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                </div>
+                
+                <div class="flex-grow text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-200 mb-2">
+                        Neolene Putri Kusuma Wardhani
+                    </h1>
+                    <p class="text-xl text-cyan-200 mb-4 font-semibold">Mahasiswa Pendidikan Teknologi Informasi</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-200 mb-4 bg-white/5 p-4 rounded-xl inline-block text-left w-full">
+                        <p><i class="fas fa-id-card w-6 text-cyan-400"></i> <strong>NIM:</strong> 26050974168</p>
+                        <p><i class="fas fa-university w-6 text-cyan-400"></i> <strong>Universitas:</strong> Universitas Negeri Surabaya</p>
+                        <p><i class="fas fa-map-marker-alt w-6 text-cyan-400"></i> <strong>Domisili:</strong> Kota Bekasi, Jawa Barat</p>
+                        <p><i class="fas fa-phone w-6 text-cyan-400"></i> <strong>Telepon:</strong> 081399696466</p>
+                    </div>
+
+                    <p class="text-gray-100 leading-relaxed text-justify md:text-left">
+                        Hai, perkenalkan saya Neolene! Saya adalah mahasiswa baru jurusan Pendidikan Teknologi Informasi yang rajin, teliti, dan disiplin. Saya sangat tertarik ke bidang <strong>Data Entry</strong> dan <strong>Data Analyst</strong>, serta memiliki minat yang besar pada <strong>Fotografi</strong>. Saya terbiasa menggunakan komputer, mengatur data, dan melayani pelanggan dengan ramah. Saya siap belajar, berkembang bersama tim, dan menyelesaikan tugas dengan akurat dan tepat waktu.
+                    </p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+            <div class="space-y-8">
+
+                <div class="glass-card rounded-2xl p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-graduation-cap mr-2"></i> Pendidikan</h2>
+                    <ul class="space-y-4 relative border-l border-cyan-500/50 ml-3 pl-4">
+                        <li class="relative">
+                            <div class="absolute w-3 h-3 bg-cyan-400 rounded-full -left-[23px] top-1.5 shadow-[0_0_10px_rgba(34,211,238,1)]"></div>
+                            <h3 class="font-semibold text-lg text-white">Universitas Negeri Surabaya</h3>
+                            <p class="text-cyan-200 text-sm">Pendidikan Teknologi Informasi (S.Pd) | Agustus 2026 - Sekarang</p>
+                        </li>
+                        <li class="relative">
+                            <div class="absolute w-3 h-3 bg-gray-400 rounded-full -left-[23px] top-1.5"></div>
+                            <h3 class="font-semibold text-lg text-gray-200">SMA Perguruan Rakyat 2 Jakarta</h3>
+                            <p class="text-gray-300 text-sm">2023 - 2026</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-briefcase mr-2"></i> Pengalaman</h2>
+                    <div class="relative border-l border-cyan-500/50 ml-3 pl-4">
+                        <div class="absolute w-3 h-3 bg-cyan-400 rounded-full -left-[23px] top-1.5 shadow-[0_0_10px_rgba(34,211,238,1)]"></div>
+                        <h3 class="font-semibold text-lg text-white">Pramuniaga & Pelayanan Pelanggan</h3>
+                        <p class="text-cyan-200 text-sm mb-2">An-Nasya Fried Chicken | 2024 - 2025</p>
+                        <ul class="list-disc list-inside text-sm text-gray-200 space-y-1">
+                            <li>Melayani kebutuhan pelanggan dengan ramah dan sopan.</li>
+                            <li>Mengurus transaksi pembayaran & perhitungan keuangan harian.</li>
+                            <li>Memeriksa dan menyusun stok barang agar rapi dan tercatat.</li>
+                            <li>Membuat catatan laporan penjualan harian.</li>
+                        </ul>
+                    </div>
+                </div>
+
+  
+                <div class="glass-card rounded-2xl p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-running mr-2"></i> Aktivitas</h2>
+                    <ul class="list-disc list-inside text-gray-100 space-y-2">
+                        <li>Fotografi & Dokumentasi Kegiatan</li>
+                        <li>Penanggung Jawab (PJ) Mata Kuliah</li>
+                        <li>Berpartisipasi aktif dalam kegiatan akademik dan kampus</li>
+                       <li>staff unesablox divisi research & education</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="glass-card rounded-2xl p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-laptop-code mr-2"></i> Keahlian & Tools</h2>
+                    
+                    <h3 class="font-semibold text-white mb-2 mt-4 text-sm uppercase tracking-wider text-cyan-200">Hard Skills</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Data Entry</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Administrasi</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Pengolahan Data</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Manajemen Stok</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Fotografi</span>
+                    </div>
+
+                    <h3 class="font-semibold text-white mb-2 text-sm uppercase tracking-wider text-cyan-200">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Customer Service</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Komunikasi Interpersonal</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Ketelitian & Disiplin</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Manajemen Waktu</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Kepemimpinan (PJ)</span>
+                    </div>
+
+                    <h3 class="font-semibold text-white mb-2 text-sm uppercase tracking-wider text-cyan-200">Tools / Software</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="glass-item px-3 py-1 rounded-full text-sm flex items-center gap-1"><i class="fas fa-file-excel text-green-400"></i> MS Excel</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm flex items-center gap-1"><i class="fas fa-file-word text-blue-400"></i> MS Word</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm flex items-center gap-1"><i class="fas fa-file-powerpoint text-orange-400"></i> PowerPoint</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm flex items-center gap-1"><i class="fab fa-google text-yellow-400"></i> Google Sheets</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm flex items-center gap-1"><i class="fab fa-microsoft text-blue-300"></i> Microsoft 365</span>
+                        <span class="glass-item px-3 py-1 rounded-full text-sm">Photo Editing Apps</span>
+                    </div>
+                </div>
+              
+                
+                <div class="glass-card rounded-2xl p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-award mr-2"></i> Sertifikasi & Pencapaian</h2>
+                    
+                    <div class="glass-item rounded-xl p-4 mb-4">
+                        <h3 class="font-bold text-lg text-white">Berkolaborasi dengan Microsoft 365</h3>
+                        <p class="text-sm text-cyan-200 mb-2">Penyelenggara: Cakap | Januari 2025</p>
+                        <p class="text-sm text-gray-300 mb-3">Menguasai penggunaan Microsoft 365 untuk kerja kolaborasi dan produktivitas.</p>
+                        <a href="https://upskill.cakap.com/sertifikat-saya/J2EA41ED6B" target="_blank" class="inline-block bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold py-1.5 px-3 rounded-lg transition-colors">
+                            <i class="fas fa-external-link-alt mr-1"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+
+                    <div class="glass-item rounded-xl p-4">
+                        <h3 class="font-bold text-lg text-white">Belajar Dasar AI</h3>
+                        <p class="text-sm text-cyan-200 mb-2">Penyelenggara: Dicoding Indonesia</p>
+                        <p class="text-sm text-gray-300">Diterbitkan: Desember 2025 | Berlaku hingga: Desember 2028</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="glass-card rounded-2xl p-6 mt-8 text-center">
+            <h2 class="text-2xl font-bold mb-6 text-cyan-300">Hubungi Saya</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:neowardhani8@gmail.com" class="glass-item flex items-center gap-2 px-6 py-3 rounded-full hover:text-cyan-300">
+                    <i class="fas fa-envelope text-xl"></i> Email
+                </a>
+                <a href="https://github.com/neolenee" target="_blank" class="glass-item flex items-center gap-2 px-6 py-3 rounded-full hover:text-cyan-300">
+                    <i class="fab fa-github text-xl"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/neolene-putri-kusuma-wardhani-8a36ab442?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="glass-item flex items-center gap-2 px-6 py-3 rounded-full hover:text-cyan-300">
+                    <i class="fab fa-linkedin text-xl"></i> LinkedIn
+                </a>
+                <a href="CV_Neolene Putri Kusuma Wardhani_2.pdf" target="_blank" class="glass-item flex items-center gap-2 px-6 py-3 rounded-full hover:text-cyan-300 bg-cyan-900/40 border-cyan-400/40">
+                    <i class="fas fa-file-pdf text-xl text-red-400"></i> Unduh CV
+                </a>
+            </div>
+        </div>
+        
+        <footer class="mt-12 text-center text-sm text-cyan-500/60 pb-8">
+            <p>&copy; 2026 Neolene Putri Kusuma Wardhani. Dibuat dengan tema Ocean.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        const canvas = document.getElementById('bubble-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let width, height;
+        let bubbles = [];
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        class Bubble {
+            constructor() {
+                this.reset();
+                this.y = Math.random() * height; 
+            }
+            reset() {
+                this.x = Math.random() * width;
+                this.y = height + Math.random() * 100;
+                this.size = Math.random() * 6 + 2; 
+                this.speed = Math.random() * 1.5 + 0.5;
+                this.wobble = Math.random() * Math.PI * 2;
+                this.wobbleSpeed = Math.random() * 0.05 + 0.01;
+            }
+            update() {
+                this.y -= this.speed;
+                this.wobble += this.wobbleSpeed;
+                this.x += Math.sin(this.wobble) * 1; 
+
+                if (this.y < -50) {
+                    this.reset();
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.15)'; 
+                ctx.fill();
+                
+                
+                ctx.beginPath();
+                ctx.arc(this.x - this.size * 0.3, this.y - this.size * 0.3, this.size * 0.2, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 60; i++) {
+            bubbles.push(new Bubble());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            
+            bubbles.forEach(bubble => {
+                bubble.update();
+                bubble.draw();
+            });
+            
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
