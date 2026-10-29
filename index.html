@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Neolene Putri Kusuma Wardhani</title>
-    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <!-- FontAwesome untuk Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -21,7 +21,7 @@
             position: relative;
         }
 
-      
+        /* Glassmorphism Effect */
         .glass-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(16px);
@@ -41,7 +41,7 @@
             transform: translateY(-2px);
         }
 
-        
+        /* SpongeBob Animation */
         .spongebob-float {
             position: fixed;
             bottom: 5%;
@@ -59,7 +59,7 @@
             100% { transform: translateY(0px) rotate(0deg); }
         }
 
-
+        /* Styling Canvas Gelembung */
         #bubble-canvas {
             position: fixed;
             top: 0;
@@ -73,22 +73,23 @@
 </head>
 <body class="antialiased">
 
+    <!-- Canvas Background untuk Gelembung Air -->
     <canvas id="bubble-canvas"></canvas>
 
-    
+    <!-- Gambar SpongeBob -->
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png" alt="SpongeBob" class="spongebob-float">
 
-  
+    <!-- Main Container -->
     <main class="max-w-5xl mx-auto px-4 py-12 relative z-10">
         
-        
+        <!-- Header Profile Section -->
         <div class="glass-card rounded-3xl p-8 mb-8">
             <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-              
-                <div class="flex-shrink-0">
-                    <img src="1000272646.png" alt="Foto Neolene" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl border-4 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                <!-- Foto di sebelah kiri -->
+                <div class="flex-shrink-0 overflow-hidden rounded-full border-4 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.4)]" style="width: 200px; height: 200px;">
+                    <img src="image_1.png" alt="Foto Profil Neolene Putri Kusuma Wardhani" class="w-full h-full object-cover">
                 </div>
-                
+                <!-- Info dan Deskripsi di sebelah kanan -->
                 <div class="flex-grow text-center md:text-left">
                     <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-200 mb-2">
                         Neolene Putri Kusuma Wardhani
@@ -108,11 +109,13 @@
                 </div>
             </div>
         </div>
-      
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          
-            <div class="space-y-8">
 
+        <!-- Grid Layout for 2 Columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Kolom Kiri -->
+            <div class="space-y-8">
+                <!-- Pendidikan -->
                 <div class="glass-card rounded-2xl p-6">
                     <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-graduation-cap mr-2"></i> Pendidikan</h2>
                     <ul class="space-y-4 relative border-l border-cyan-500/50 ml-3 pl-4">
@@ -129,6 +132,7 @@
                     </ul>
                 </div>
 
+                <!-- Pengalaman Profesional -->
                 <div class="glass-card rounded-2xl p-6">
                     <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-briefcase mr-2"></i> Pengalaman</h2>
                     <div class="relative border-l border-cyan-500/50 ml-3 pl-4">
@@ -144,19 +148,20 @@
                     </div>
                 </div>
 
-  
+                <!-- Aktivitas -->
                 <div class="glass-card rounded-2xl p-6">
                     <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-running mr-2"></i> Aktivitas</h2>
                     <ul class="list-disc list-inside text-gray-100 space-y-2">
                         <li>Fotografi & Dokumentasi Kegiatan</li>
                         <li>Penanggung Jawab (PJ) Mata Kuliah</li>
                         <li>Berpartisipasi aktif dalam kegiatan akademik dan kampus</li>
-                       <li>staff unesablox divisi research & education</li>
                     </ul>
                 </div>
             </div>
 
+            <!-- Kolom Kanan -->
             <div class="space-y-8">
+                <!-- Keahlian & Tools -->
                 <div class="glass-card rounded-2xl p-6">
                     <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-laptop-code mr-2"></i> Keahlian & Tools</h2>
                     
@@ -188,8 +193,8 @@
                         <span class="glass-item px-3 py-1 rounded-full text-sm">Photo Editing Apps</span>
                     </div>
                 </div>
-              
-                
+
+                <!-- Sertifikasi & Pencapaian -->
                 <div class="glass-card rounded-2xl p-6">
                     <h2 class="text-2xl font-bold mb-4 text-cyan-300 border-b border-white/20 pb-2"><i class="fas fa-award mr-2"></i> Sertifikasi & Pencapaian</h2>
                     
@@ -211,7 +216,7 @@
             </div>
         </div>
 
-        
+        <!-- Kontak & Sosial Media -->
         <div class="glass-card rounded-2xl p-6 mt-8 text-center">
             <h2 class="text-2xl font-bold mb-6 text-cyan-300">Hubungi Saya</h2>
             <div class="flex flex-wrap justify-center gap-4">
@@ -236,6 +241,7 @@
 
     </main>
 
+    <!-- Script Animasi Gelembung Air (Canvas) -->
     <script>
         const canvas = document.getElementById('bubble-canvas');
         const ctx = canvas.getContext('2d');
@@ -279,7 +285,7 @@
                 ctx.fillStyle = 'rgba(255, 255, 255, 0.15)'; 
                 ctx.fill();
                 
-                
+                // Highlight gelembung
                 ctx.beginPath();
                 ctx.arc(this.x - this.size * 0.3, this.y - this.size * 0.3, this.size * 0.2, 0, Math.PI * 2);
                 ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
